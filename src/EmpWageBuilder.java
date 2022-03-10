@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class EmpWageBuilder {
-    public static void main(String[] args) {
+    public static void get_Data() {
         int Emp_Total_Hours = 0;
         int Emp_Total_Days = 0;
         Random random = new Random();
@@ -47,7 +47,10 @@ public class EmpWageBuilder {
 
             }
         }
-
+    }
+    public static void main(String[] args) {
+        EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+        empWageBuilder.get_Data();
     }
 }
 
